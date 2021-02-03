@@ -48,14 +48,14 @@ router.route('/:id').delete((req, res) =>{
 //update user
 router.route('/update/:id').post((req,res) =>{
 
-    User.findById((req, res))
+    User.findById((req.params.id))
         .then( user => {
             user.fullname = req.body.fullname;
             user.username = req.body.username;
             user.account_type = req.body.account_type;
         
-            const newUser = new User({ fullname, username,account_type});
-            newUser.save()
+            
+            user.save()
                     .then( () => { res.json('User is updated!')})
                     .catch( err => 
                          res.status(400).json('Error: ' + err))})
