@@ -53,8 +53,7 @@ router.route('/update/:id').post((req,res) =>{
             user.fullname = req.body.fullname;
             user.username = req.body.username;
             user.account_type = req.body.account_type;
-        
-            
+                  
             user.save()
                     .then( () => { res.json('User is updated!')})
                     .catch( err => 
