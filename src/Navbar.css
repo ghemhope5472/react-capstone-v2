@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    font-size: 15px;
+    font-weight: 400;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1cbe1c, #067906);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #22c922, #067906); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    padding:  0;
+}
+
+.dropdown-menu{
+    font-size: 15px;
+}
+.navbar-brand img{
+    width: 50px;
+}
+.nav-link{
+    margin: 0px 10px;
+    color: floralwhite;
+}
+.nav-item{
+    color: floralwhite;
+    border-right: 1PX solid rgba(247, 242, 242, 0.5);
+}
+
+.nav-link:hover{
+    color: rgb(51, 38, 13);
+    
+}
+.nav-item:last-child{
+    color: floralwhite;
+    border: none;
+}
+
+.navbar i{
+   
+    margin: 0px 10px;
+}
+
+.navbar .menuBtn{
+   
+    color: green;
+    border: none;
+    outline: none;
+}
+
+.container{
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+}
+.navbar{
+    box-shadow: 0px 2px 3px rgba(31, 30, 30, 0.5);
+}
+p{
+    margin:2px;
+    display: inline-block;
+    font-weight: 400;
+    color: floralwhite;
+}
+
+.fa-bars{
+    color: floralwhite;
+}
+
+.nav-item{
+    text-align: left !important;
+}
+
+
+@media only screen and ( max-width:600px){
+    p{
+        font-size: 20px;
+        padding-left: 13px;
+    }
+} 
+

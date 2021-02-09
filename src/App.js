@@ -5,10 +5,17 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
 
 import Navbar from './components/Navbar'
+import Carousel from './components/Carousel'
+import Topbar from './components/Topbar'
 
 function App() {
   return (
-    <Navbar/>
+    <Router>
+        <Topbar />
+        <Navbar />
+        <Carousel />
+    </Router>
+    
   );
 }
 
