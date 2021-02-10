@@ -11,7 +11,7 @@ export default class CarouselBootrap extends Component{
         return (  
                 <div>  
                 
-                 <div className='' >  
+                 <div className='container' >  
                  <Carousel>  
                  <Carousel.Item style={{'height':"500px"}} >  
                  <img style={{'height':"500px"}}  
